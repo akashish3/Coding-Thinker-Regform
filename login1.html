@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        html,body{
+            background-color:black;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .box{
+        background-color: rgb(34, 28, 28);
+        width: 200px;
+        height: 200px; 
+        border: 5px solid rgb(124, 60, 60);
+        padding: 20px 50px;
+        align-items:center;
+        text-align: center;
+        border-radius: 10px;
+        border-left-color: rgb(193, 86, 161);
+        border-top-color: rgb(147, 223, 223);
+        border-right-color: rgb(181, 186, 191);
+        border-bottom-color: bisque;
+        animation:soin 1s ease infinite ;
+        
+    }
+    .box:hover{
+       background-color:rgb(16, 3, 3);
+    }
+    /* @keyframes spin{
+        100%{
+            transform:rotate(360deg);
+        } */
+    
+    input{
+       background-color: rgb(76, 81, 87);
+       padding: 10px 30px;
+       border-radius: 20px;
+       text-align: center;
+       color: aqua;
+    }
+    input:hover{
+        background-color: rgba(7, 28, 28, 0.336);
+    }
+    button{
+        background-color: rgb(78, 91, 160);
+        width: 230px;
+        padding: 10px 30px;
+        border-radius: 20px;
+        color: aquamarine;
+    }
+    button:hover{
+        color: aquamarine;
+        background-color: blue;
+    }
+    a{
+        color: aqua;
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <input type="text" placeholder="Entr_User_Name"><br><br>
+    <input type="password" placeholder="Password"><br><br>
+    <a href="#">Forgot password</a>
+    <a href="#"><span>Signup</span></a><br><br>
+    <!-- <button>SignUp</button><br><br> -->
+    <button>Lognin</button>
+    <!-- <button>Forgot password</button> -->
+
+        </div>
+    </div>
+    
+    
+</body>
+</html>
