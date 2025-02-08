@@ -1,43 +1,64 @@
-<html>
-    <head>
-        <title>Coding Thinker Registration Form</title>
-        <link rel="icon" href="fab.png">
-    </head>
-    <body style="background-color:rgba(0, 0, 0, 0.918)">
-        <h1 style="color: aqua;text-align: center;text-shadow: 0cm;">Welcome to Coding Thinker </h1>
-        <form style="color: aliceblue;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Thinker Registration Form</title>
+    <link rel="icon" href="fab.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Welcome to Coding Thinker</h2>
+    <div class="container">
+        <form>
             <fieldset>
-                <legend style="text-align: center;text-shadow: 0ch;">Regestration Form</legend>
-            Name :<input type="text" placeholder="Enter your name"> <br><br>
-            Father's Name :<input type="text" placeholder="Enter your F'Name"> <br><br>
-            Gender :<input type="radio" name="Gender">Male
-                    <input type="radio"name="Gender">Female <br><br>
-            Skill :<input type="checkbox">JAVA
-                   <input type="checkbox">CPP
-                   <input type="checkbox">C
-                   <input type="checkbox">ORACLE <br><br>
-            DOB :<input type="date"> <br><br>
-            Contact No :<input type="number"placeholder="Enter contact no"> <br><br>
-            Email id :<input type="email"placeholder="@gmail.com"> <br><br>
-            Photo id :<input type="file"> <br><br>
-            Resume :<input type="file"> <br><br>
-            About Yourself :<input type="text">
-           <!--<input type="submit"style="color:blue">-->
+                <legend>Registration Form</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required><br><br>
 
-         </fieldset>        
+                <label for="fname">Father's Name:</label>
+                <input type="text" id="fname" placeholder="Enter your F'Name" required><br><br>
+
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female<br><br>
+
+                <label for="skill">Skill:</label>
+                <input type="checkbox" name="skill" value="java">JAVA
+                <input type="checkbox" name="skill" value="cpp">CPP
+                <input type="checkbox" name="skill" value="c">C
+                <input type="checkbox" name="skill" value="oracle">ORACLE<br><br>
+
+                <label for="dob">DOB:</label>
+                <input type="date" id="dob" required><br><br>
+
+                <label for="contact">Contact No:</label>
+                <input type="number" id="contact" placeholder="Enter contact no" required><br><br>
+
+                <label for="email">Email id:</label>
+                <input type="email" id="email" placeholder="@gmail.com" required><br><br>
+
+                <label for="photo">Photo id:</label>
+                <input type="file" id="photo"><br><br>
+
+                <label for="resume">Resume:</label>
+                <input type="file" id="resume"><br><br>
+
+                <label for="textarea">Textarea:</label>
+                <textarea id="textarea" placeholder="Enter some text..."></textarea>
+            </fieldset>
         </form>
-            <a href="payment.html"> 
-                <button style="border-radius: 0cm;font-size: medium;color: blue;">Submit</button>
-            </a>   <br><br> 
-          <!--  <a href="payment.html"> 
-                <button style="color: blue;">Payment</button>
-            </a>   -->
+
+        <a href="payment.html">
+            <button>Submit</button>
+        </a><br><br>
 
         <a href="testimonial.html">
-            <button style="color: blue;">Testimonial Video's</button>
-        </a> 
+            <button style="color: aqua;">Testimonial Videos</button>
+        </a>
         <a href="findus.html">
-            <button style="color: blue;">Find Us</button>
-        </a> 
-       </body>
+            <button style="color: aqua;">Find Us</button>
+        </a>
+    </div>
+</body>
 </html>
